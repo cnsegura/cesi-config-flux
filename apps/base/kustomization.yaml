@@ -4,4 +4,3 @@ namespace: cesi
 resources:
   - namespace.yaml
   - service.yaml
-  - release.yaml
