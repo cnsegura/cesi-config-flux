@@ -16,4 +16,4 @@ spec:
     command: ["sh", "-c"]
     args: ["sleep infinity"]
   imagePullSecrets:
-  - name: regcredcesi
+  - name: cesiregistrycred
