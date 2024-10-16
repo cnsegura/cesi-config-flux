@@ -11,3 +11,7 @@ spec:
   chart:
     spec:
       chart: ./mercer-deployment/charts/mqtt-client
+  values:
+    image: 
+      repository: cesicontainerregistry.azurecr.io/mqtt-client
+      tag: latest
