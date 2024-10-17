@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mqtt-client-deployment
+  labels:
+    app: mqtt-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mqtt-client
+  template:
+    metadata:
+      labels:
+        app: mqtt-client
+      namespace: cesi 
+    spec:
+      containers:
+        - name: mqtt-client
+          image: cesicontainerregistry.azurecr.io/mqtt-client
+          command: ["sh", "-c", "sleep infinity"]
