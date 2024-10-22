@@ -3,3 +3,9 @@ kind: Kustomization
 namespace: cesi
 resources:
   - namespace.yaml
+secretGenerator:
+  - name: cesiregistrycred
+    files:
+      - username.txt
+      - password.txt
+  
