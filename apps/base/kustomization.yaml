@@ -6,6 +6,6 @@ resources:
 secretGenerator:
   - name: cesiregistrycred
     files:
-      - username.txt
-      - password.txt
+      - /home/azureuser/username.txt
+      - /home/azureuser/password.txt
   
