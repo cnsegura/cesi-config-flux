@@ -1,4 +1,4 @@
-bases:
+resources:
   - ../base
-patches:
+patchesStrategicMerge:
   - ipc_sealedsecret.yaml
