@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: not-important
+spec:
+  template:
+    spec:
+      containers:
+        - name: mqtt-client
+          image: cesicontainerregistry.azurecr.io/mqtt-client
+          command: ["sh", "-c", "sleep infinity"]
+          volumeMounts:
+          - name: mq-sat
+            mountPath: /var/run/secrets/tokens
+          - name: trust-bundle
+            mountPath: /var/run/certs
+      volumes:
+      - name: mq-sat
+        projected:
+          sources:
+          - serviceAccountToken:
+            path: mq-sat
+            audience: aio-internal # Must match audience in BrokerAuthentication
+            expirationSeconds: 86400
+      - name: trust-bundle
+        configMap:
+          name: aio-ca-trust-bundle-test-only # Default root CA cert
