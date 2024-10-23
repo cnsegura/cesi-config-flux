@@ -19,3 +19,5 @@ spec:
         - name: mqtt-client
           image: cesicontainerregistry.azurecr.io/mqtt-client
           command: ["sh", "-c", "sleep infinity"]
+      imagePullSecrets:
+        - name: cesiregistrycred
