@@ -4,4 +4,5 @@ namespace: azure-iot-operations
 resources:
   - namespace.yaml
   - sealedsecret.yaml
+  - deployment.yaml
   
