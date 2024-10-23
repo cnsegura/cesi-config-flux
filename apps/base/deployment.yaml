@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mqtt-client-deployment
+  name: cesi-mqtt-client
   labels:
     app: mqtt-client
 spec:
