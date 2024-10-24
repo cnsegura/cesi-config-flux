@@ -7,7 +7,7 @@ metadata:
   labels:
     trust.cert-manager.io/bundle: azure-iot-operations-aio-ca-trust-bundle
   name: azure-iot-operations-aio-ca-trust-bundle
-  namespace: azure-iot-operations
+  namespace: cesi
   ownerReferences:
   - apiVersion: trust.cert-manager.io/v1alpha1
     blockOwnerDeletion: true
