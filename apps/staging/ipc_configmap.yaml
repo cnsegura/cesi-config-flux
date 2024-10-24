@@ -2,41 +2,41 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   annotations:
-    trust.cert-manager.io/hash: 395a463dd1d5abf5d6f95defc63ace70cf5ccdbd8d8d3589876d285a81ad1255
-  creationTimestamp: "2024-10-08T21:54:11Z"
+    trust.cert-manager.io/hash: 7697a779a350eba764a2bcbfd6f5e5adf30f7fa26b4e654878172252cdff1a1f
+  creationTimestamp: "2024-10-24T22:03:42Z"
   labels:
     trust.cert-manager.io/bundle: azure-iot-operations-aio-ca-trust-bundle
   name: azure-iot-operations-aio-ca-trust-bundle
-  namespace: cesi
+  namespace: azure-iot-operations
   ownerReferences:
   - apiVersion: trust.cert-manager.io/v1alpha1
     blockOwnerDeletion: true
     controller: true
     kind: Bundle
     name: azure-iot-operations-aio-ca-trust-bundle
-    uid: df6f7ce7-411f-4acc-8798-98442c0e5d1d
-  resourceVersion: "7625"
-  uid: a834ef99-f1b1-4881-aa74-76907be61745
+    uid: 9fd4cf0d-ff36-4c5f-bcb8-f3f49d1d6f94
+  resourceVersion: "4649"
+  uid: fc9b886b-f7a7-43e3-a636-7a0fc225b61c
 data:
   ca.crt: |
     -----BEGIN CERTIFICATE-----
-    MIIDgzCCAmugAwIBAgIRAO8+BRUIjj4aMfLeMajSA9owDQYJKoZIhvcNAQELBQAw
+    MIIDgzCCAmugAwIBAgIRAJSdZuGGB0UXxdHQmhUap90wDQYJKoZIhvcNAQELBQAw
     WzESMBAGA1UEChMJTWljcm9zb2Z0MUUwQwYDVQQDEzxBenVyZSBJb1QgT3BlcmF0
     aW9ucyBRdWlja3N0YXJ0IFJvb3QgQ0EgLSBOb3QgZm9yIFByb2R1Y3Rpb24wHhcN
-    MjQxMDA4MjE1NDExWhcNMjUxMDA4MjE1NDExWjBbMRIwEAYDVQQKEwlNaWNyb3Nv
+    MjQxMDI0MjIwMzQyWhcNMjUxMDI0MjIwMzQyWjBbMRIwEAYDVQQKEwlNaWNyb3Nv
     ZnQxRTBDBgNVBAMTPEF6dXJlIElvVCBPcGVyYXRpb25zIFF1aWNrc3RhcnQgUm9v
     dCBDQSAtIE5vdCBmb3IgUHJvZHVjdGlvbjCCASIwDQYJKoZIhvcNAQEBBQADggEP
-    ADCCAQoCggEBANVsbLd91E0Zj4ir60n/l26xWLHMjYsbiMkO8Od/aEYvcSskfMGi
-    qJNjqIF6h7MwL5zZuRgdeTf5dAlw3Ao7R6IArfmLsvTRJVMbQjoKRfU3CnP9rXrT
-    n2SRJ5Bk9sUNKj06n4nS14vkm6PKKS3YUu7wOdbm2lPVl9LhNNiDXPR1eyKMYEZ2
-    z/9fy/sfvOSPPFDe+FYfhHleonglb65KRoDzIlOhAgv0RUJKhCPfKdEmUW5W3gHW
-    Dk+GsOn8jy+77DSqKAr8r8yfz92uXb1fQpPMCh9BhlGTF+75c0ZHw87gbeD78wM2
-    bWGwE3CYYsPcjIGe4LoB2qAsoyqhvkgnPaECAwEAAaNCMEAwDgYDVR0PAQH/BAQD
-    AgEGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFBqkN52NCkHMZgnPHKrXypfK
-    ee5uMA0GCSqGSIb3DQEBCwUAA4IBAQCc1+H3uyO69rTOPltM1eCkBTuxCKl0gh3B
-    FdJWWDcRsuxk5S1L7FWHXfy6IRVbsvOlVKv+K/NhwhsxHcYeVHLOv684JyojErRy
-    NeGhSLeNKyH02r2L9xsob9ZaUsAPW7+8SSCudVZYWtnV7AlhhdEJEsNjWGI+BVlq
-    Q0NnOVONoMwqqoziXNMdWa/ovqiKdvYGKyJwl2YbDnu6+MHlqSXA6JOHD9xDu6qt
-    S1snwGOj5kJD4dc2vASe8IV/9Z4AvuRlAhOR1nHRy0c2MazxachS2pIk71XSqRwk
-    JTgTuHQ6vvkMXhkGXmKf9m+5+ldVAs0PZvIIM87m1mQ37wytDvPC
+    ADCCAQoCggEBALhDa4xsT1qPvFs9Ub5b0oUhTUdUTnlCGBTkdxwjZWYUpFqVdAGi
+    eNQmR6rCWoYi/U6l0DdQAg37b8yMNIeKzzX7MmZ4gxLBGi5SqNzfES8ZQf0x21FQ
+    oHarRbqTBrwoC+cGFUMf6naI6qtgKIcTMWx7Im3webIRIbwvAOZwhyn6FKnMkM8L
+    NDNeEpXZ/ZZwE5JKO0n61iO+G6a/KDWuxdyYu57WRrPyT9nGadn7j/ewE8vkuv61
+    3ECRkBsy67ihRKgrXhD+UEsHwytJP6CNoko8jZtNzO7vi0hY9RBiXf3+3adUTTBE
+    mUpQ/ggzF9NXfrxynGLimLDqv9ETlJ/ZWtECAwEAAaNCMEAwDgYDVR0PAQH/BAQD
+    AgEGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFBHJbu1f5ERFtDxlnto17yEw
+    ASSxMA0GCSqGSIb3DQEBCwUAA4IBAQBqIBeuMrvM2xdJzhN2HYWKeEGlNGOHxYvm
+    8M6kT3SDpzc3slw5bniZegEerjZwKL7tRLXPbr/jiqbysI6OiFvS+UMHg4WnDdHd
+    UJJatg9ne8CtI5C+cCUw2W0wFG20uUHY8/VTuCCZBj0gshK450GLKcBSSschxhqJ
+    vKoysd1eJj2yftq0TFlmB1SyCX7qfPlrXi2yUpuJjM0RWyc3Eur+UGe8hbNjcURo
+    5dLKx2N6o7NWCJONfa+KyV6JZyLZTuIDx7/00JkVNpJVP0qlqJiThr7WJZ+0D6of
+    8/1NDdrmg5IsH+YrIuEbfT5dZSa9Rx+GvJ9cRxYCDYL2RqjzWVyB
     -----END CERTIFICATE-----
