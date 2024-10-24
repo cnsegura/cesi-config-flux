@@ -1,4 +1,6 @@
 resources:
   - ../base
+  - ipc_configmap.yaml
 patchesStrategicMerge:
   - ipc_sealedsecret.yaml
+  - ipc_deployment.yaml
