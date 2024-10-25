@@ -15,6 +15,7 @@ spec:
         app: mqtt-client
       namespace: cesi 
     spec:
+      serviceAccountName: cesi-mqtt-client
       containers:
         - name: mqtt-client
           image: cesicontainerregistry.azurecr.io/mqtt-client
