@@ -1,22 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  annotations:
-    trust.cert-manager.io/hash: 7697a779a350eba764a2bcbfd6f5e5adf30f7fa26b4e654878172252cdff1a1f
-  creationTimestamp: "2024-10-24T22:03:42Z"
   labels:
     trust.cert-manager.io/bundle: azure-iot-operations-aio-ca-trust-bundle
   name: azure-iot-operations-aio-ca-trust-bundle
   namespace: cesi
-  ownerReferences:
-  - apiVersion: trust.cert-manager.io/v1alpha1
-    blockOwnerDeletion: true
-    controller: true
-    kind: Bundle
-    name: azure-iot-operations-aio-ca-trust-bundle
-    uid: 9fd4cf0d-ff36-4c5f-bcb8-f3f49d1d6f94
-  resourceVersion: "4649"
-  uid: fc9b886b-f7a7-43e3-a636-7a0fc225b61c
 data:
   ca.crt: |
     -----BEGIN CERTIFICATE-----
