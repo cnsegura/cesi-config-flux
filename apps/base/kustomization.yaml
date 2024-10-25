@@ -4,5 +4,6 @@ namespace: cesi
 resources:
   - namespace.yaml
   - sealedsecret.yaml
+  - serviceaccount.yaml
   - deployment.yaml
   
