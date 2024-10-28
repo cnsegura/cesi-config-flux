@@ -4,6 +4,7 @@ metadata:
   name: cesi-mqtt-client
   labels:
     app: mqtt-client
+  namespace: cesi # Move the namespace here
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,6 @@ spec:
     metadata:
       labels:
         app: mqtt-client
-      namespace: cesi 
     spec:
       serviceAccountName: cesi-mqtt-client
       containers:
@@ -30,9 +30,9 @@ spec:
         projected:
           sources:
           - serviceAccountToken:
-            path: mq-sat
-            audience: aio-internal # Must match audience in BrokerAuthentication
-            expirationSeconds: 86400
+              path: mq-sat
+              audience: aio-internal # Must match audience in BrokerAuthentication
+              expirationSeconds: 86400
       - name: trust-bundle
         configMap:
           name: azure-iot-operations-aio-ca-trust-bundle # Default root CA cert
