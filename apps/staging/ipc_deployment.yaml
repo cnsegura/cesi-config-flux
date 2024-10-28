@@ -17,14 +17,14 @@ spec:
     spec:
       serviceAccountName: cesi-mqtt-client
       containers:
-        - name: mqtt-client
-          image: cesicontainerregistry.azurecr.io/mqtt-client
-          command: ["sh", "-c", "sleep infinity"]
-          volumeMounts:
-          - name: mq-sat
-            mountPath: /var/run/secrets/tokens
-          - name: trust-bundle
-            mountPath: /var/run/certs
+      - name: mqtt-client
+        image: cesicontainerregistry.azurecr.io/mqtt-client
+        command: ["sh", "-c", "sleep infinity"]
+        volumeMounts:
+        - name: mq-sat
+          mountPath: /var/run/secrets/tokens
+        - name: trust-bundle
+          mountPath: /var/run/certs
       volumes:
       - name: mq-sat
         projected:
